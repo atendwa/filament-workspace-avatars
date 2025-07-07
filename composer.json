@@ -1,24 +1,26 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "atendwa/filament-workspace-avatars",
+    "description": "This is my package filament-workspace-avatars",
     "keywords": [
-        ":vendor_name",
+        "atendwa",
         "laravel",
-        ":package_slug"
+        "filament-workspace-avatars"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/atendwa/filament-workspace-avatars",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "atendwa",
+            "email": "atendwa@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0||^12.0"
+        "php": "^8.2",
+        "atendwa/support": "^1.0",
+        "google/apiclient": "^2.18",
+        "illuminate/contracts": "^10.0||^11.0||^12.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,14 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Atendwa\\FilamentWorkspaceAvatars\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "Atendwa\\FilamentWorkspaceAvatars\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -63,11 +63,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "Atendwa\\FilamentWorkspaceAvatars\\WorkspaceAvatarServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
